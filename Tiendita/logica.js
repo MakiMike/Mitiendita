@@ -60,8 +60,10 @@ function cambiarCantidad(index, cambio) {
 }
 
 function resumen(){
-    let contenedor = document.getElementById("producto");
+    let contenedor = document.getElementById("res");
     contenedor.innerHTML = ""; 
+    let div = document.createElement("div");
+    div.classList.add("producto");
     div.innerHTML = `
             <div class="datos">
                 <h3>${producto.nombre}</h3>
@@ -75,6 +77,8 @@ function resumen(){
             
             <button id="general" onclick="resumen()">Compra General</button>
         `;
+        contenedor.appendChild(div);
+
 }
 
 function comprarProducto(index) {

@@ -21,12 +21,19 @@
             <h2>Nuestros Productos</h2>
             <div id="producto"></div>
 
+            <button id="general" onclick="resumen()">Compra General</button>
+
             
         </section>
 
         <section class="resumen">
             
-            <div class="datos">
+            <div id="res">
+
+            </div>
+
+            <!--
+                <div class="datos">
                 <h3>${producto.nombre}</h3>
                 <p id="cantidad">Cantidad: <span id="cantidad-${index}">${producto.cantidad}</span></p>
                 <p>$${producto.precio.toFixed(2)}</p>
@@ -34,9 +41,12 @@
             <div class="total">
                 <p id="subtotal-${index}">Total: $0 </p>
             </div>
+                        <button id="general" onclick="resumen()">Compra General</button>
+
+            -->
+            
                 
             
-            <button id="general" onclick="resumen()">Compra General</button>
 
         </section>
     
