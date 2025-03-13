@@ -21,8 +21,22 @@ header {
     text-align: center;
 }
 
-.contenido{
+section{
     border:solid 20px #333;
+}
+
+.datos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vw;
+    border:solid 10px #007BFF;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
 }
 
 #general{

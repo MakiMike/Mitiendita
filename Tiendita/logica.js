@@ -59,6 +59,24 @@ function cambiarCantidad(index, cambio) {
     document.getElementById(`cantidad-${index}`).textContent = producto.cantidad;
 }
 
+function resumen(){
+    let contenedor = document.getElementById("producto");
+    contenedor.innerHTML = ""; 
+    div.innerHTML = `
+            <div class="datos">
+                <h3>${producto.nombre}</h3>
+                <p id="cantidad">Cantidad: <span id="cantidad-${index}">${producto.cantidad}</span></p>
+                <p>$${producto.precio.toFixed(2)}</p>
+            </div>
+            <div class="total">
+                <p id="subtotal-${index}">Total: $0 </p>
+            </div>
+                
+            
+            <button id="general" onclick="resumen()">Compra General</button>
+        `;
+}
+
 function comprarProducto(index) {
     let producto = productos[index];
     let cantidad = producto.cantidad;
