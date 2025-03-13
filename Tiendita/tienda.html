@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Tienda de Moda</h1>
-        <nav>
+        <nav class="info">
             <ul>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -17,21 +17,45 @@
         </nav>
     </header>
     
-    <section id="productos">
+    <section class="contenido" id="productos">
         <h2>Nuestros Productos</h2>
         <div class="producto">
             <img src="producto1.jpg" alt="Producto 1">
-            <h3>Camisa Elegante</h3>
-            <p>$25.00</p>
+            <div class="infoProd">
+                <h3>Camisa Elegante: </h3>
+                <p id="cantidad"> 1</p>
+                <p>$25.00</p>   
+            </div>
+            
+            <div class="opciones">
+                <button id="comprar"> Comprar </button>
+                
+            </div>
+
+            <p id="subtotal">subtotal: </p>
+
+
         </div>
         <div class="producto">
             <img src="producto2.jpg" alt="Producto 2">
-            <h3>Jeans Clásicos</h3>
-            <p>$40.00</p>
+
+            <div class="infoProd">
+                <h3>Jeans Clásicos</h3>
+                <p id="cantidad"> 1</p>   
+                <p>$40.00</p>   
+            </div>
+            
+            <div class="opciones">
+                <button id="comprar"> Comprar </button>
+                
+            </div>
+
+            <p id="subtotal">subtotal: </p>
+
         </div>
     </section>
     
-    <section id="contacto">
+    <section class="contacto">
         <h2>Contacto</h2>
         <p>Email: tienda@moda.com</p>
         <p>Teléfono: +123456789</p>
