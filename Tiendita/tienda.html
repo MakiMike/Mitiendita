@@ -16,18 +16,81 @@
             </ul>
         </nav>
     </header>
-    
     <section class="contenido" id="productos">
         <h2>Nuestros Productos</h2>
-        <div id="lista-productos"></div>
-    </section>
+        <div class="producto">
+            <img src="producto1.jpg" alt="Producto 1">
+            <div class="infoProd">
+                <h3>Camisa Elegante: </h3>
+                <p id="cantidad"> 1</p>
+                <p>$25.00</p>   
+            </div>
+            
+            <div class="opciones">
+                <button class="comprar" id="comprar"> Comprar </button>
+                <div class="INC">
+                    <button id="menos"> - </button>
+                    <button id="mas"> + </button>
+                </div>
+            </div>
 
-    <script src="logica.js"></script> 
+
+            <p id="subtotal">subtotal: </p>
+
+
+        </div>
+        <div class="producto">
+            <img src="producto2.jpg" alt="Producto 2">
+
+            <div class="infoProd">
+                <h3>Jeans Clásicos</h3>
+                <p id="cantidad"> 1</p>   
+                <p>$40.00</p>   
+            </div>
+            
+            <div class="opciones">
+                <button class="comprar" id="comprar"> Comprar </button>
+                <div class="INC">
+                    <button id="menos"> - </button>
+                    <button id="mas"> + </button>
+                </div>
+            </div>
+
+            <p id="subtotal">subtotal: </p>
+
+        </div>
+        <section class="contenido" id="productos">
+            <h2>Nuestros Productos</h2>
+            <div id="lista-productos"></div>
+        </section>
     
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: tienda@moda.com</p>
-        <p>Teléfono: +123456789</p>
-    </section>
+        <script src="logica.js"></script> 
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una tienda de moda comprometida con ofrecerte las últimas tendencias a precios accesibles.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p>Email: tienda@moda.com</p>
+                <p>Teléfono: +123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tienda de Victorius. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
