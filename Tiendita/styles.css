@@ -17,6 +17,10 @@ header {
     text-align: center;
 }
 
+.producto {
+    font-size: 2vw;
+}
+
 
 
 
@@ -61,6 +65,17 @@ section {
     width: 10vw;
     background-color: green;
     border-radius: 20px;
+}
+
+.contenido{
+    height: 50vw;
+    
+}
+
+.contacto{
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Estilos responsivos */
