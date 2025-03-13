@@ -125,3 +125,44 @@ section {
         margin: 5px 0;
     }
 }
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0); /* Fondo degradado */
+    border: 1px solid #ccc;
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra en el texto */
+}
+
+#contacto p {
+    margin: 15px 0;
+    color: #555;
+    font-size: 1.1em;
+}
+
+#contacto p strong {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Efecto de iluminación en los enlaces de contacto */
+#contacto a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#contacto a:hover {
+    color: #0056b3;
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efecto de iluminación */
+}
