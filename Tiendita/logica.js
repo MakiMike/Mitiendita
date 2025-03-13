@@ -15,6 +15,8 @@ let productos = [
     new Producto("Jeans Clásicos", 40.00, "producto2.jpg")
 ];
 
+total = 0;
+
 // Función para mostrar productos en el HTML
 function mostrarProductos() {
     let contenedor = document.getElementById("producto");
@@ -51,12 +53,16 @@ function cambiarCantidad(index, cambio) {
     let producto = productos[index];
     producto.cantidad += cambio;
    
-
     if (producto.cantidad <= 0) {
         producto.cantidad = 0;
-        
     }
-    const subtotal = producto.precio * producto.cantidad;
+    let subtotal = producto.precio * producto.cantidad;
+    if(cambio == 1){
+        this.total += producto.precio;
+    }
+    if(cambio == -1){
+        this.total -= producto.precio;
+    }
     // Actualizar la cantidad en la interfaz
     document.getElementById(`subtotal-${index}`).textContent = `subtotal: $${subtotal}`;
     document.getElementById(`cantidad-${index}`).textContent = producto.cantidad;
@@ -66,34 +72,45 @@ function comprarProducto(index) {
     let producto = productos[index];
     let cantidad = producto.cantidad;
 
-    if (producto.stock >= cantidad) {
+    if (producto.stock >= cantidad  && cantidad!=0) {
         producto.stock -= cantidad;
         alert(`Has comprado ${cantidad} unidad(es) de ${producto.nombre}`);
         producto.cantidad = 0; // Resetear la cantidad después de la compra
         document.getElementById(`subtotal-${index}`).textContent= `subtotal: $0`
         mostrarProductos();
-    } else {
+        this.total=0;
+    } if (cantidad == 0 ) {
+        alert("No se ha seleccionado ningún producto.");
+       this.total=0;
+    } else if(cantidad > producto.stock){
         alert("No hay suficiente stock para realizar la compra.");
+      this.total=0
     }
 }
 
 function compraGeneral(){
+    cadena="";
     productos.forEach((producto,index) =>{
          cantidad = producto.cantidad;
 
         if (producto.stock >= cantidad && cantidad!=0) {
             producto.stock -= cantidad;
-            alert(`Has comprado ${cantidad} unidad(es) de ${producto.nombre}`);
-            producto.cantidad = 0; // Resetear la cantidad después de la compra
+            cadena +=`Has comprado ${cantidad} unidad(es) de ${producto.nombre} \n`;
+            producto.cantidad = 0; 
             document.getElementById(`subtotal-${index}`).textContent= `subtotal: $0`
             mostrarProductos();
+            
         }
-        if (cantidad == 0 || producto.stock >= cantidad) {
+        if (cantidad == 0 ) {
+            
            
-        } else {
+        } else if(cantidad > producto.stock){
             alert("No hay suficiente stock para realizar la compra.");
+          
         }
     })
+    this.total=0;
+    alert(cadena);
 }
 
 // Función para guardar los productos en un archivo JSON
