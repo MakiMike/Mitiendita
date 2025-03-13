@@ -46,12 +46,12 @@ function mostrarProductos() {
     });
 }
 
-// Función para cambiar la cantidad de un producto
+
 function cambiarCantidad(index, cambio) {
     let producto = productos[index];
     producto.cantidad += cambio;
    
-    // Asegurarse de que la cantidad no sea menor que 1
+
     if (producto.cantidad <= 0) {
         producto.cantidad = 0;
         
@@ -62,7 +62,6 @@ function cambiarCantidad(index, cambio) {
     document.getElementById(`cantidad-${index}`).textContent = producto.cantidad;
 }
 
-// Función de compra (puedes personalizarla)
 function comprarProducto(index) {
     let producto = productos[index];
     let cantidad = producto.cantidad;
@@ -107,5 +106,5 @@ function guardarProductosJSON() {
     a.click();
 }
 
-// Mostrar productos al cargar la página
+
 document.addEventListener("DOMContentLoaded", mostrarProductos);
