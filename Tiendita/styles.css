@@ -68,6 +68,10 @@ section {
     border-radius: 20px;
 }
 
+.comprar :hover{
+    background-color: darkgreen;
+}
+
 .INC{
     display: flex;
     padding-right: 2vw;
