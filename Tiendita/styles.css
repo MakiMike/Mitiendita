@@ -7,6 +7,10 @@ body {
     padding: 0;
 }
 
+h2{
+    margin-left: 1vw;
+}
+
 header {
     display: flex;
     justify-content: space-evenly;
@@ -15,6 +19,20 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+}
+
+.contenido{
+    border:solid 20px #333;
+}
+
+#general{
+    margin-top: 4vw;
+    margin-left: 37vw;
+    font-size: 2vw;
+    background-color: darkcyan;
+    border-radius: 20px;
+    width: 20vw;
+    height: 5vw;
 }
 
 .producto {
