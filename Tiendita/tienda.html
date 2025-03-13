@@ -16,52 +16,18 @@
             </ul>
         </nav>
     </header>
-    
-    <section class="contenido" id="productos">
-        <h2>Nuestros Productos</h2>
-        <div class="producto">
-            <img src="producto1.jpg" alt="Producto 1">
-            <div class="infoProd">
-                <h3>Camisa Elegante: </h3>
-                <p id="cantidad"> 1</p>
-                <p>$25.00</p>   
-            </div>
+   
+        <section class="contenido" id="productos">
+            <h2>Nuestros Productos</h2>
+            <div id="producto"></div>
+
+                <button id="general" onclick="compraGeneral()">Compra General</button>
             
-            <div class="opciones">
-                <button class="comprar" id="comprar"> Comprar </button>
-                <div class="INC">
-                    <button id="menos"> - </button>
-                    <button id="mas"> + </button>
-                </div>
-            </div>
-
-
-            <p id="subtotal">subtotal: </p>
-
-
-        </div>
-        <div class="producto">
-            <img src="producto2.jpg" alt="Producto 2">
-
-            <div class="infoProd">
-                <h3>Jeans Clásicos</h3>
-                <p id="cantidad"> 1</p>   
-                <p>$40.00</p>   
-            </div>
-            
-            <div class="opciones">
-                <button class="comprar" id="comprar"> Comprar </button>
-                <div class="INC">
-                    <button id="menos"> - </button>
-                    <button id="mas"> + </button>
-                </div>
-            </div>
-
-            <p id="subtotal">subtotal: </p>
-
-        </div>
-    </section>
+        </section>
     
+        <script src="logica.js"></script> 
+
+
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
@@ -87,5 +53,6 @@
             <p>&copy; 2025 Tienda de Victorius. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
 </body>
 </html>
