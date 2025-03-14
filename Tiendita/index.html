@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ropa</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
     <header>
@@ -16,20 +16,45 @@
             </ul>
         </nav>
     </header>
-    
-    <section id="productos">
-        <h2>Nuestros Productos</h2>
-        <div id="lista-productos"></div> <!-- Aquí se insertarán los productos dinámicamente -->
-    </section>
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: tienda@moda.com</p>
-        <p>Teléfono: +123456789</p>
-    </section>
+   
+        <section class="contenido" id="productos">
+            <h2>Nuestros Productos</h2>
+            <div id="producto"></div>
 
-    <script src="logica.js"></script> <!-- Archivo de JavaScript -->
+            <button id="general" onclick="compraGeneral()">Compra General</button>
+
+            
+        </section>
+
+    
+        <script src="JS/logica.js"></script> 
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una tienda de moda comprometida con ofrecerte las últimas tendencias a precios accesibles.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p>Email: tienda@moda.com</p>
+                <p>Teléfono: +123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tienda de Victorius. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
 </body>
-</html>
-
 </html>

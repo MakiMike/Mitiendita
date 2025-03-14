@@ -7,6 +7,10 @@ body {
     padding: 0;
 }
 
+h2{
+    margin-left: 1vw;
+}
+
 header {
     display: flex;
     justify-content: space-evenly;
@@ -15,6 +19,34 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+}
+
+section{
+    border:solid 20px #333;
+}
+
+.datos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vw;
+    border:solid 10px #007BFF;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+}
+
+#general{
+    margin-top: 4vw;
+    margin-left: 37vw;
+    font-size: 2vw;
+    background-color: darkcyan;
+    border-radius: 20px;
+    width: 20vw;
+    height: 5vw;
 }
 
 .producto {
@@ -58,7 +90,8 @@ section {
     height: auto;
 }
 
-#comprar{
+.comprar{
+    padding: 1vw;
     color: white;
     font-size: 1.5vw;
     height: 5vw;
@@ -67,9 +100,33 @@ section {
     border-radius: 20px;
 }
 
+.comprar :hover{
+    background-color: darkgreen;
+}
+
+.INC{
+    display: flex;
+    padding-right: 2vw;
+    justify-content:space-evenly;
+    width: 100%;
+    padding: 1vw;
+}
+
+.INC :hover{
+    background-color: #333;
+}
+
+.INC button{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 20px;
+}
+
+
+
 .contenido{
     height: 50vw;
-    
+
 }
 
 .contacto{
@@ -99,4 +156,72 @@ section {
     .producto {
         margin: 5px 0;
     }
+}
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #fff;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007BFF;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #ccc;
 }
