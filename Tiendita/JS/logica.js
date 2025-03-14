@@ -10,8 +10,8 @@ class Producto {
 }
 
 let productos = [
-    new Producto("Camisa Elegante", 25.00, "producto1.jpg"),
-    new Producto("Jeans Clásicos", 40.00, "producto2.jpg")
+    new Producto("Camisa Elegante", 25.00, "imagenes/producto1.jpg"),
+    new Producto("Jeans Clásicos", 40.00, "imagenes/producto2.jpg")
 ];
 
 function mostrarProductos() {
